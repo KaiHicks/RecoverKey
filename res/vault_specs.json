@@ -1,0 +1,15 @@
+{
+  "_version": "v1.0",
+  "password": {
+    "kdf_params": {
+      "algorithm": "ARGON_2_D",
+      "time_cost": 20,
+      "memory_cost": 16777216,
+      "parallelism": 24
+    }
+  },
+  "secret_shards": {
+    "num_shards": 5,
+    "required_shards": 3
+  }
+}

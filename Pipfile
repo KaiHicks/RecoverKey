@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mnemonic = "*"
+secretsharing = {git = "git+https://github.com/blockstack/secret-sharing"}
+cryptography = "*"
+black = "*"
+argon2-cffi = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+generate="python3 recovery.py generate"
+unlock="python3 recovery.py unlock"
+test="python3 recoveryTest.py"
+format="python3 -m black ."
